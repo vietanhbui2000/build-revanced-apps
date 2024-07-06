@@ -4,48 +4,53 @@ integrations-source = "revanced/revanced-integrations"
 
 [YouTube]
 enabled = true
-apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube/"
-uptodown-dlurl = "https://youtube.en.uptodown.com/android"
-version = "auto"
 build-mode = "apk"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube/"
+version = "auto"
+arch = "universal"
 included-patches = "'Announcements' 'Bypass URL redirects' 'Change start page' 'Enable slide to seek' 'GmsCore support' 'Hide ads' 'Navigation buttons' 'Open links externally' 'Remember video quality' 'Remove background playback restrictions' 'Remove tracking query parameter' 'Remove viewer discretion dialog' 'Restore old seekbar thumbnails' 'Restore old video quality menu' 'Return YouTube Dislike' 'Seekbar tapping' 'SponsorBlock' 'Spoof app version' 'Spoof client' 'Spoof device dimensions' 'Video ads'"
 exclusive-patches = true
 
 [YouTube-Music]
 enabled = true
+build-mode = "apk"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music/"
 version = "auto"
-build-mode = "apk"
 arch = "both"
 
 [Twitch]
 enabled = true
+build-mode = "apk"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/twitch-interactive-inc/twitch/"
 version = "auto"
-build-mode = "apk"
+arch = "universal"
 
 [TikTok]
 enabled = true
+build-mode = "apk"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/tiktok-pte-ltd/tik-tok/"
 version = "auto"
-build-mode = "apk"
+arch = "universal"
 included-patches = "'SIM spoof'"
 
 [TikTok-Musically]
 enabled = false
+build-mode = "apk"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/tiktok-pte-ltd/tik-tok-including-musical-ly/"
 version = "auto"
-build-mode = "apk"
+arch = "universal"
 included-patches = "'SIM spoof'"
 
 [Lightroom]
 enabled = true
+build-mode = "apk"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/adobe/lightroom/"
 version = "auto"
-build-mode = "apk"
+arch = "arm64-v8a"
 
 [VSCO]
 enabled = true
+build-mode = "apk"
 uptodown-dlurl = "https://vsco-cam.en.uptodown.com/android"
 version = "auto"
-build-mode = "apk"
+arch = "universal"
