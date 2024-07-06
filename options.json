@@ -1,1 +1,20 @@
-[]
+[
+  {
+    "patchName": "GmsCore support",
+    "options": [
+      {
+        "key": "gmsCoreVendorGroupId",
+        "value": "app.revanced"
+      }
+    ]
+  },
+  {
+    "patchName": "GmsCore support",
+    "options": [
+      {
+        "key": "gmsCoreVendorGroupId",
+        "value": "app.revanced"
+      }
+    ]
+  }
+]
