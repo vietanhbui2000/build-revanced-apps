@@ -1,72 +1,50 @@
-enable-magisk-update = true   # set this to false if you do not want to receive updates for the module in magisk app
-
-# add 'enabled = false' for not patching a specific app or remove it from the config
-# see https://github.com/j-hc/revanced-magisk-module/blob/main/CONFIG.md for more detailed explanations
-
-# you can use rvmm-config-gen to generate a config
+cli-source = "revanced/revanced-cli"
+patches-source = "revanced/revanced-patches"
+integrations-source = "revanced/revanced-integrations"
 
 [YouTube]
-build-mode = "both"
-excluded-patches = ""
-included-patches = ""
+enabled = true
+apkmirror-dlurl = "https:/www.apkmirror.com/apk/google-inc/youtube/"
 version = "auto"
-archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.youtube"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube" # fallback
-
-[Music]
-build-mode = "both"
-archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.apps.youtube.music"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music"
-arch = "both"
-
-[Music-Extended]
-app-name = "Music"
-patches-source = "inotia00/revanced-patches"
-integrations-source = "inotia00/revanced-integrations"
-cli-source = "inotia00/revanced-cli"
-rv-brand = "ReVanced Extended"
-build-mode = "both"
-archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.apps.youtube.music"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music"
-arch = "both"
-
-[YouTube-Extended]
-app-name = "YouTube"
-patches-source = "inotia00/revanced-patches"
-integrations-source = "inotia00/revanced-integrations"
-cli-source = "inotia00/revanced-cli"
-rv-brand = "ReVanced Extended"
-build-mode = "both"
-archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.youtube"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
-
-[Twitter]
 build-mode = "apk"
-archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.twitter.android"
+included-patches = "'Announcements' 'Bypass URL redirects' 'Change start page' 'Enable slide to seek' 'GmsCore support' 'Hide ads' 'Navigation buttons' 'Open links externally' 'Remember video quality' 'Remove background playback restrictions' 'Remove tracking query parameter' 'Remove viewer discretion dialog' 'Restore old seekbar thumbnails' 'Restore old video quality menu' 'Return YouTube Dislike' 'Seekbar tapping' 'SponsorBlock' 'Spoof app version' 'Spoof client' 'Spoof device dimensions' 'Video ads'"
+exclusive-patches = true
+
+[YouTube-Music]
+enabled = true
+apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music/"
+version = "auto"
+build-mode = "apk"
+arch = "both"
 
 [Twitch]
-archive-dlurl = "https://archive.org/download/jhc-apks/apks/tv.twitch.android.app"
+enabled = true
+apkmirror-dlurl = "https://www.apkmirror.com/apk/twitch-interactive-inc/twitch/"
+version = "auto"
+build-mode = "apk"
 
 [TikTok]
-archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.zhiliaoapp.musically"
+enabled = true
+apkmirror-dlurl = "https://www.apkmirror.com/apk/tiktok-pte-ltd/tik-tok/"
+version = "auto"
+build-mode = "apk"
 included-patches = "'SIM spoof'"
 
-[Reddit-Extended]
-patches-source = "inotia00/revanced-patches"
-integrations-source = "inotia00/revanced-integrations"
-cli-source = "inotia00/revanced-cli"
-rv-brand = "ReVanced Extended"
-archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.reddit.frontpage"
-
-[Messenger]
+[TikTok-Musically]
 enabled = false
-apkmirror-dlurl = "https://www.apkmirror.com/apk/facebook-2/messenger/"
-arch = "arm64-v8a"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/tiktok-pte-ltd/tik-tok-including-musical-ly/"
+version = "auto"
+build-mode = "apk"
+included-patches = "'SIM spoof'"
 
-[Spotify]
-enabled = false
-uptodown-dlurl = "https://spotify.en.uptodown.com/android"
+[Lightroom]
+enabled = true
+apkmirror-dlurl = "https://www.www.apkmirror.com/apk/adobe/lightroom/"
+version = "auto"
+build-mode = "apk"
 
-[IconPackStudio]
-enabled = false
-apkmirror-dlurl = "https://www.apkmirror.com/apk/smart-launcher-team/icon-pack-studio/"
+[VSCO]
+enabled = true
+uptodown-dlurl = "https://vsco-cam.en.uptodown.com/android"
+version = "auto"
+build-mode = "apk"
