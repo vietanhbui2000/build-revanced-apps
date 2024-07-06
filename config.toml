@@ -7,7 +7,7 @@ enabled = true
 build-mode = "apk"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube/"
 version = "auto"
-arch = all
+arch = "all"
 included-patches = "'Announcements' 'Bypass URL redirects' 'Change start page' 'Enable slide to seek' 'GmsCore support' 'Hide ads' 'Navigation buttons' 'Open links externally' 'Remember video quality' 'Remove background playback restrictions' 'Remove tracking query parameter' 'Remove viewer discretion dialog' 'Restore old seekbar thumbnails' 'Restore old video quality menu' 'Return YouTube Dislike' 'Seekbar tapping' 'SponsorBlock' 'Spoof app version' 'Spoof client' 'Spoof device dimensions' 'Video ads'"
 exclusive-patches = true
 
@@ -23,14 +23,14 @@ enabled = true
 build-mode = "apk"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/twitch-interactive-inc/twitch/"
 version = "auto"
-arch = all
+arch = "all"
 
 [TikTok]
 enabled = true
 build-mode = "apk"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/tiktok-pte-ltd/tik-tok/"
 version = "auto"
-arch = all
+arch = "all"
 included-patches = "'SIM spoof'"
 
 [TikTok-Musically]
@@ -38,7 +38,7 @@ enabled = false
 build-mode = "apk"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/tiktok-pte-ltd/tik-tok-including-musical-ly/"
 version = "auto"
-arch = all
+arch = "all"
 included-patches = "'SIM spoof'"
 
 [Lightroom]
@@ -53,4 +53,4 @@ enabled = true
 build-mode = "apk"
 uptodown-dlurl = "https://vsco-cam.en.uptodown.com/android"
 version = "auto"
-arch = all
+arch = "all"
