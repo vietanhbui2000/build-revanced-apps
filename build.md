@@ -1,5 +1,5 @@
-YouTube-Music (arm-v7a): 7.03.52  
 YouTube-Music (arm64-v8a): 7.03.52  
+YouTube-Music (arm-v7a): 7.03.52  
 TikTok: 32.5.3  
 Twitch: 16.9.1  
 VSCO: 345  
