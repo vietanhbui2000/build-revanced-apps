@@ -4,7 +4,7 @@ integrations-source = "revanced/revanced-integrations"
 
 [YouTube]
 enabled = true
-apkmirror-dlurl = "https:/www.apkmirror.com/apk/google-inc/youtube/"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube/"
 uptodown-dlurl = "https://youtube.en.uptodown.com/android"
 version = "auto"
 build-mode = "apk"
