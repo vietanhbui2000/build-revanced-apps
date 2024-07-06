@@ -1,9 +1,10 @@
-YouTube-Music (arm-v7a): 7.03.52  
 YouTube-Music (arm64-v8a): 7.03.52  
+YouTube-Music (arm-v7a): 7.03.52  
 YouTube: 19.16.39  
 Twitch: 16.9.1  
-VSCO: 345  
+Lightroom: 9.4.1  
 TikTok: 32.5.3  
+VSCO: 345  
 
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
 Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach root ReVanced YouTube and YT Music from Play Store  
