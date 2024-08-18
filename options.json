@@ -16,5 +16,23 @@
         "value": "app.revanced"
       }
     ]
+  },
+  {
+    "patchName": "GmsCore support",
+    "options": [
+      {
+        "key": "gmsCoreVendorGroupId",
+        "value": "app.revanced"
+      }
+    ]
+  },
+  {
+    "patchName": "Spoof features",
+    "options": [
+      {
+        "key": "featuresToEnable",
+        "value": "'com.google.android.apps.photos.NEXUS_PRELOAD' 'com.google.android.apps.photos.nexus_preload'"
+      }
+    ]
   }
 ]
