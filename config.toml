@@ -8,7 +8,7 @@ build-mode = "apk"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube/"
 version = "auto"
 arch = "all"
-included-patches = "'Announcements' 'Bypass image region restrictions' 'Bypass URL redirects' 'Change start page' 'Enable slide to seek' 'Disable player popup panels' 'GmsCore support' 'Hide ads' 'Navigation buttons' 'Open links externally' 'Remember video quality' 'Remove background playback restrictions' 'Remove tracking query parameter' 'Remove viewer discretion dialog' 'Restore old seekbar thumbnails' 'Restore old video quality menu' 'Return YouTube Dislike' 'Seekbar tapping' 'SponsorBlock' 'Spoof app version' 'Spoof client' 'Spoof device dimensions' 'Video ads'"
+included-patches = "'Announcements' 'Bypass image region restrictions' 'Bypass URL redirects' 'Change start page' 'Check watch history domain name resolution' 'Disable player popup panels' 'Enable slide to seek' 'GmsCore support' 'Hide ads' 'Navigation buttons' 'Open links externally' 'Remember video quality' 'Remove background playback restrictions' 'Remove tracking query parameter' 'Remove viewer discretion dialog' 'Restore old seekbar thumbnails' 'Restore old video quality menu' 'Return YouTube Dislike' 'Seekbar tapping' 'SponsorBlock' 'Spoof app version' 'Spoof client' 'Spoof device dimensions' 'Video ads'"
 exclusive-patches = true
 
 [YouTube-Music]
@@ -40,6 +40,13 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/tiktok-pte-ltd/tik-tok-includin
 version = "auto"
 arch = "all"
 included-patches = "'SIM spoof'"
+
+[Google-Photos]
+enabled = true
+build-mode = "apk"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/photos/"
+version = "auto"
+arch = "both"
 
 [Lightroom]
 enabled = false
