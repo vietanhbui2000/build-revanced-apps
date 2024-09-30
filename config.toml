@@ -25,18 +25,18 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/twitch-interactive-inc/twitch/"
 version = "auto"
 arch = "all"
 
-[TikTok]
-enabled = true
+[TikTok-Musically]
+enabled = false
 build-mode = "apk"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/tiktok-pte-ltd/tik-tok/"
+uptodown-dlurl = "https://tiktok.en.uptodown.com/android"
 version = "auto"
 arch = "all"
 included-patches = "'SIM spoof'"
 
-[TikTok-Musically]
-enabled = false
+[TikTok]
+enabled = true
 build-mode = "apk"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/tiktok-pte-ltd/tik-tok-including-musical-ly/"
+uptodown-dlurl = "https://tik-tok.en.uptodown.com/android"
 version = "auto"
 arch = "all"
 included-patches = "'SIM spoof'"
