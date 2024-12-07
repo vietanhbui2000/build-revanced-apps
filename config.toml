@@ -1,86 +1,92 @@
-enable-magisk-update = true # set this to false if you do not want to receive updates for the module in magisk app
 parallel-jobs = 1
 
-# add 'enabled = false' for not patching a specific app or remove it from the config
-# see https://github.com/j-hc/revanced-magisk-module/blob/main/CONFIG.md for more detailed explanations
-
-# you can use rvmm-config-gen to generate a config
+cli-source = "revanced/revanced-cli"
+patches-source = "revanced/revanced-patches"
+integrations-source = "revanced/revanced-integrations"
 
 [YouTube]
-build-mode = "both"
-excluded-patches = ""
-included-patches = ""
-version = "auto"
+enabled = true
+build-mode = "apk"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
 uptodown-dlurl = "https://youtube.en.uptodown.com/android"
-# archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.youtube"
+version = "auto"
+arch = "all"
+included-patches = "'Bypass image region restrictions' 'Bypass URL redirects' 'Change start page' 'Check watch history domain name resolution' 'Disable auto captions' 'Disable fullscreen ambient mode' 'Disable player popup panels' 'Disable precise seeking gesture' 'Disable resuming Shorts on startup' 'Disable rolling number animations' 'Disable suggested video end screen' 'Disable zoom haptics' 'GmsCore support' 'Hide ads' 'Hide endscreen cards' 'Hide info cards' 'Hide layout components' 'Hide player flyout menu items' 'Hide player overlay buttons' 'Hide seekbar' 'Hide Shorts components' 'Hide timestamp' 'Hide video action buttons' 'Miniplayer' 'Navigation buttons' 'Open links externally' 'Remember video quality' 'Remove background playback restrictions' 'Remove player controls background' 'Remove tracking query parameter' 'Remove viewer discretion dialog' 'Restore old video quality menu' 'Return YouTube Dislike' 'Seekbar tapping' 'Seekbar thumbnails' 'Shorts autoplay' 'SponsorBlock' 'Spoof app version' 'Spoof device dimensions' 'Spoof video streams' 'Video ads'"
+excluded-patches = "'Alternative thumbnails' 'Always repeat' 'Announcements' 'Change header' 'Copy video URL' 'Custom branding' 'Custom player overlay opacity' 'Downloads' 'Enable debugging' 'Enable slide to seek' 'Enable tablet layout' 'Playback speed' 'Swipe controls' 'Theme' 'Wide searchbar'"
+patcher-args = "-OgmsCoreVendorGroupId=app.revanced "
 
-[Music]
-build-mode = "both"
-arch = "both"
+[YouTube-Music]
+enabled = true
+build-mode = "apk"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music"
 uptodown-dlurl = "https://youtube-music.en.uptodown.com/android"
-# archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.apps.youtube.music"
-
-[GooglePhotos]
-build-mode = "both"
-arch = "both"
 version = "auto"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/photos/"
-uptodown-dlurl = "https://google-photos.en.uptodown.com/android"
+arch = "both"
+included-patches = "'Bypass certificate checks' 'Enable exclusive audio playback' 'GmsCore support' 'Hide 'Get Music Premium' label' 'Hide music video ads' 'Remove background playback restrictions' 'Remove upgrade button'"
+excluded-patches = "'Hide category bar' 'Permanent repeat' 'Permanent shuffle'"
+patcher-args = "-OgmsCoreVendorGroupId=app.revanced "
 
 [Twitch]
-apkmirror-dlurl = "https://www.apkmirror.com/apk/twitch-interactive-inc/twitch/"
+enabled = true
+build-mode = "apk"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/twitch-interactive-inc/twitch"
 uptodown-dlurl = "https://twitch.en.uptodown.com/android"
-# archive-dlurl = "https://archive.org/download/jhc-apks/apks/tv.twitch.android.app"
+version = "auto"
+arch = "all"
 
-# [Music-Extended]
-# app-name = "Music"
-# patches-source = "inotia00/revanced-patches"
-# cli-source = "inotia00/revanced-cli"
-# rv-brand = "ReVanced Extended"
-# build-mode = "both"
-# arch = "both"
-# apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music"
-# # archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.apps.youtube.music"
+[TikTok]
+enabled = true
+build-mode = "apk"
+uptodown-dlurl = "https://tik-tok.en.uptodown.com/android"
+version = "auto"
+arch = "all"
+included-patches = "'SIM spoof'"
 
-# [YouTube-Extended]
-# app-name = "YouTube"
-# patches-source = "inotia00/revanced-patches"
-# cli-source = "inotia00/revanced-cli"
-# rv-brand = "ReVanced Extended"
-# build-mode = "both"
-# apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
-# # archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.youtube"
-
-# [Reddit-Extended]
-# patches-source = "inotia00/revanced-patches"
-# cli-source = "inotia00/revanced-cli"
-# rv-brand = "ReVanced Extended"
-# apkmirror-dlurl = "https://www.apkmirror.com/apk/redditinc/reddit/"
-# # archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.reddit.frontpage"
+[TikTok-Musically]
+enabled = true
+build-mode = "apk"
+uptodown-dlurl = "https://tiktok.en.uptodown.com/android"
+version = "auto"
+arch = "all"
+included-patches = "'SIM spoof'"
 
 [Twitter]
 enabled = false
-apkmirror-dlurl = "https://www.apkmirror.com/apk/x-corp/twitter"
 build-mode = "apk"
-dpi = "120-640dpi"
-# archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.twitter.android"
+apkmirror-dlurl = "https://apkmirror.com/apk/twitter-inc/twitter"
+uptodown-dlurl = "https://twitter.en.uptodown.com/android"
+version = "auto"
+arch = "all"
 
-[TikTok]
+[Reddit]
 enabled = false
-# archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.zhiliaoapp.musically"
-included-patches = "'SIM spoof'"
+build-mode = "apk"
+apkmirror-dlurl = "https://apkmirror.com/apk/redditinc/reddit"
+uptodown-dlurl = "https://reddit-official-app.en.uptodown.com/android"
 
-[Messenger]
+version = "auto"
+arch = "all"
+
+[Google-Photos]
 enabled = false
-apkmirror-dlurl = "https://www.apkmirror.com/apk/facebook-2/messenger/"
+build-mode = "apk"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/photos"
+uptodown-dlurl = "https://google-photos.en.uptodown.com/android"
+version = "auto"
+arch = "both"
+
+[Lightroom]
+enabled = false
+build-mode = "apk"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/adobe/lightroom"
+uptodown-dlurl = "https://adobe-lightroom-mobile.en.uptodown.com/android"
+version = "auto"
 arch = "arm64-v8a"
 
-[Spotify]
+[Backdrops]
 enabled = false
-uptodown-dlurl = "https://spotify.en.uptodown.com/android"
-
-[IconPackStudio]
-enabled = false
-apkmirror-dlurl = "https://www.apkmirror.com/apk/smart-launcher-team/icon-pack-studio/"
+build-mode = "apk"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/backdrops/backdrops-wallpapers"
+uptodown-dlurl = "https://backdrops.en.uptodown.com/android"
+version = "auto"
+arch = "all"
