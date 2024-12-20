@@ -50,7 +50,7 @@ exclusive-patches = true
 [Twitch]
 enabled = true
 build-mode = "apk"
-version = "20.2.1"
+version = "16.9.1"
 arch = "all"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/twitch-interactive-inc/twitch"
 uptodown-dlurl = "https://twitch.en.uptodown.com/android"
