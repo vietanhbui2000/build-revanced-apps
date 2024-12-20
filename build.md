@@ -1,4 +1,5 @@
 TikTok: 36.5.4  
+Twitch: 20.2.1  
 YouTube: 19.46.42  
 YouTube-Music (arm64-v8a): 7.29.52  
 YouTube-Music (arm-v7a): 7.29.52  
