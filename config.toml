@@ -52,7 +52,6 @@ enabled = true
 build-mode = "apk"
 version = "auto"
 arch = "all"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/twitch-interactive-inc/twitch"
 uptodown-dlurl = "https://twitch.en.uptodown.com/android"
 included-patches = "'Block audio ads' 'Block embedded ads' 'Block video ads' 'Show deleted messages' 'Auto claim channel points' 'Settings'"
 exclusive-patches = true
